@@ -1,0 +1,484 @@
+[
+  {
+    "canonicalId": "two-sum",
+    "slug": "two-sum",
+    "title": "Two Sum",
+    "officialDifficulty": "Easy",
+    "topicTags": ["Arrays & Hashing"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/two-sum/",
+    "starterCode": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number[]}\n */\nfunction twoSum(nums, target) {\n  // Your code here\n}",
+    "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\n\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\n\nYou can return the answer in any order.",
+    "authorizedExamples": [
+      {
+        "input": "nums = [2,7,11,15], target = 9",
+        "output": "[0,1]",
+        "explanation": "Because nums[0] + nums[1] == 9, we return [0, 1]."
+      },
+      {
+        "input": "nums = [3,2,4], target = 6",
+        "output": "[1,2]",
+        "explanation": "Because nums[1] + nums[2] == 6, we return [1, 2]."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "two-sum-1",
+        "input": [[2, 7, 11, 15], 9],
+        "expected": [0, 1],
+        "rawInputStr": "[2,7,11,15], 9"
+      },
+      {
+        "id": "two-sum-2",
+        "input": [[3, 2, 4], 6],
+        "expected": [1, 2],
+        "rawInputStr": "[3,2,4], 6"
+      },
+      {
+        "id": "two-sum-3",
+        "input": [[3, 3], 6],
+        "expected": [0, 1],
+        "rawInputStr": "[3,3], 6"
+      }
+    ],
+    "expectedSolvingTimeSeconds": 900,
+    "isActive": true
+  },
+  {
+    "canonicalId": "contains-duplicate",
+    "slug": "contains-duplicate",
+    "title": "Contains Duplicate",
+    "officialDifficulty": "Easy",
+    "topicTags": ["Arrays & Hashing"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/contains-duplicate/",
+    "starterCode": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nfunction containsDuplicate(nums) {\n  // Your code here\n}",
+    "description": "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.",
+    "authorizedExamples": [
+      {
+        "input": "nums = [1,2,3,1]",
+        "output": "true",
+        "explanation": "1 appears at index 0 and 3."
+      },
+      {
+        "input": "nums = [1,2,3,4]",
+        "output": "false",
+        "explanation": "All elements are distinct."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "contains-dup-1",
+        "input": [[1, 2, 3, 1]],
+        "expected": true,
+        "rawInputStr": "[1,2,3,1]"
+      },
+      {
+        "id": "contains-dup-2",
+        "input": [[1, 2, 3, 4]],
+        "expected": false,
+        "rawInputStr": "[1,2,3,4]"
+      }
+    ],
+    "expectedSolvingTimeSeconds": 600,
+    "isActive": true
+  },
+  {
+    "canonicalId": "valid-anagram",
+    "slug": "valid-anagram",
+    "title": "Valid Anagram",
+    "officialDifficulty": "Easy",
+    "topicTags": ["Arrays & Hashing"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/valid-anagram/",
+    "starterCode": "/**\n * @param {string} s\n * @param {string} t\n * @return {boolean}\n */\nfunction isAnagram(s, t) {\n  // Your code here\n}",
+    "description": "Given two strings s and t, return true if t is an anagram of s, and false otherwise.\n\nAn Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.",
+    "authorizedExamples": [
+      {
+        "input": "s = \"anagram\", t = \"nagaram\"",
+        "output": "true",
+        "explanation": "All characters match frequencies."
+      },
+      {
+        "input": "s = \"rat\", t = \"car\"",
+        "output": "false",
+        "explanation": "'c' is not present in 'rat'."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "valid-anagram-1",
+        "input": ["anagram", "nagaram"],
+        "expected": true,
+        "rawInputStr": "\"anagram\", \"nagaram\""
+      },
+      {
+        "id": "valid-anagram-2",
+        "input": ["rat", "car"],
+        "expected": false,
+        "rawInputStr": "\"rat\", \"car\""
+      }
+    ],
+    "expectedSolvingTimeSeconds": 600,
+    "isActive": true
+  },
+  {
+    "canonicalId": "group-anagrams",
+    "slug": "group-anagrams",
+    "title": "Group Anagrams",
+    "officialDifficulty": "Medium",
+    "topicTags": ["Arrays & Hashing"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/group-anagrams/",
+    "starterCode": "/**\n * @param {string[]} strs\n * @return {string[][]}\n */\nfunction groupAnagrams(strs) {\n  // Your code here\n}",
+    "description": "Given an array of strings strs, group the anagrams together. You can return the answer in any order.",
+    "authorizedExamples": [
+      {
+        "input": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+        "output": "[[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]",
+        "explanation": "Grouped anagram strings together."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "group-anagrams-1",
+        "input": [["eat", "tea", "tan", "ate", "nat", "bat"]],
+        "expected": [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]],
+        "rawInputStr": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]"
+      }
+    ],
+    "expectedSolvingTimeSeconds": 1500,
+    "isActive": true
+  },
+  {
+    "canonicalId": "valid-palindrome",
+    "slug": "valid-palindrome",
+    "title": "Valid Palindrome",
+    "officialDifficulty": "Easy",
+    "topicTags": ["Two Pointers"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/valid-palindrome/",
+    "starterCode": "/**\n * @param {string} s\n * @return {boolean}\n */\nfunction isPalindrome(s) {\n  // Your code here\n}",
+    "description": "A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.\n\nGiven a string s, return true if it is a palindrome, or false otherwise.",
+    "authorizedExamples": [
+      {
+        "input": "s = \"A man, a plan, a canal: Panama\"",
+        "output": "true",
+        "explanation": "\"amanaplanacanalpanama\" is a palindrome."
+      },
+      {
+        "input": "s = \"race a car\"",
+        "output": "false",
+        "explanation": "\"raceacar\" is not a palindrome."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "valid-pal-1",
+        "input": ["A man, a plan, a canal: Panama"],
+        "expected": true,
+        "rawInputStr": "\"A man, a plan, a canal: Panama\""
+      },
+      {
+        "id": "valid-pal-2",
+        "input": ["race a car"],
+        "expected": false,
+        "rawInputStr": "\"race a car\""
+      }
+    ],
+    "expectedSolvingTimeSeconds": 720,
+    "isActive": true
+  },
+  {
+    "canonicalId": "3sum",
+    "slug": "3sum",
+    "title": "3Sum",
+    "officialDifficulty": "Medium",
+    "topicTags": ["Two Pointers"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/3sum/",
+    "starterCode": "/**\n * @param {number[]} nums\n * @return {number[][]}\n */\nfunction threeSum(nums) {\n  // Your code here\n}",
+    "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.\n\nNotice that the solution set must not contain duplicate triplets.",
+    "authorizedExamples": [
+      {
+        "input": "nums = [-1,0,1,2,-1,-4]",
+        "output": "[[-1,-1,2],[-1,0,1]]",
+        "explanation": "Triplets summing to zero without duplicates."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "3sum-1",
+        "input": [[-1, 0, 1, 2, -1, -4]],
+        "expected": [[-1, -1, 2], [-1, 0, 1]],
+        "rawInputStr": "[-1,0,1,2,-1,-4]"
+      }
+    ],
+    "expectedSolvingTimeSeconds": 1500,
+    "isActive": true
+  },
+  {
+    "canonicalId": "best-time-to-buy-and-sell-stock",
+    "slug": "best-time-to-buy-and-sell-stock",
+    "title": "Best Time to Buy and Sell Stock",
+    "officialDifficulty": "Easy",
+    "topicTags": ["Sliding Window"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "starterCode": "/**\n * @param {number[]} prices\n * @return {number}\n */\nfunction maxProfit(prices) {\n  // Your code here\n}",
+    "description": "You are given an array prices where prices[i] is the price of a given stock on the ith day.\n\nYou want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.\n\nReturn the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.",
+    "authorizedExamples": [
+      {
+        "input": "prices = [7,1,5,3,6,4]",
+        "output": "5",
+        "explanation": "Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5."
+      },
+      {
+        "input": "prices = [7,6,4,3,1]",
+        "output": "0",
+        "explanation": "In this case, no transactions are done and the max profit = 0."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "stock-1",
+        "input": [[7, 1, 5, 3, 6, 4]],
+        "expected": 5,
+        "rawInputStr": "[7,1,5,3,6,4]"
+      },
+      {
+        "id": "stock-2",
+        "input": [[7, 6, 4, 3, 1]],
+        "expected": 0,
+        "rawInputStr": "[7,6,4,3,1]"
+      }
+    ],
+    "expectedSolvingTimeSeconds": 900,
+    "isActive": true
+  },
+  {
+    "canonicalId": "longest-substring-without-repeating-characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "title": "Longest Substring Without Repeating Characters",
+    "officialDifficulty": "Medium",
+    "topicTags": ["Sliding Window"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "starterCode": "/**\n * @param {string} s\n * @return {number}\n */\nfunction lengthOfLongestSubstring(s) {\n  // Your code here\n}",
+    "description": "Given a string s, find the length of the longest substring without repeating characters.",
+    "authorizedExamples": [
+      {
+        "input": "s = \"abcabcbb\"",
+        "output": "3",
+        "explanation": "The answer is \"abc\", with the length of 3."
+      },
+      {
+        "input": "s = \"bbbbb\"",
+        "output": "1",
+        "explanation": "The answer is \"b\", with the length of 1."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "longest-sub-1",
+        "input": ["abcabcbb"],
+        "expected": 3,
+        "rawInputStr": "\"abcabcbb\""
+      },
+      {
+        "id": "longest-sub-2",
+        "input": ["bbbbb"],
+        "expected": 1,
+        "rawInputStr": "\"bbbbb\""
+      }
+    ],
+    "expectedSolvingTimeSeconds": 1500,
+    "isActive": true
+  },
+  {
+    "canonicalId": "binary-search",
+    "slug": "binary-search",
+    "title": "Binary Search",
+    "officialDifficulty": "Easy",
+    "topicTags": ["Binary Search"],
+    "blind75": false,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/binary-search/",
+    "starterCode": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number}\n */\nfunction search(nums, target) {\n  // Your code here\n}",
+    "description": "Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.\n\nYou must write an algorithm with O(log n) runtime complexity.",
+    "authorizedExamples": [
+      {
+        "input": "nums = [-1,0,3,5,9,12], target = 9",
+        "output": "4",
+        "explanation": "9 exists in nums and its index is 4"
+      },
+      {
+        "input": "nums = [-1,0,3,5,9,12], target = 2",
+        "output": "-1",
+        "explanation": "2 does not exist in nums so return -1"
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "binary-search-1",
+        "input": [[-1, 0, 3, 5, 9, 12], 9],
+        "expected": 4,
+        "rawInputStr": "[-1,0,3,5,9,12], 9"
+      },
+      {
+        "id": "binary-search-2",
+        "input": [[-1, 0, 3, 5, 9, 12], 2],
+        "expected": -1,
+        "rawInputStr": "[-1,0,3,5,9,12], 2"
+      }
+    ],
+    "expectedSolvingTimeSeconds": 600,
+    "isActive": true
+  },
+  {
+    "canonicalId": "reverse-linked-list",
+    "slug": "reverse-linked-list",
+    "title": "Reverse Linked List",
+    "officialDifficulty": "Easy",
+    "topicTags": ["Linked Lists"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/reverse-linked-list/",
+    "starterCode": "/**\n * Definition for singly-linked list.\n * function ListNode(val, next) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.next = (next===undefined ? null : next)\n * }\n */\n/**\n * @param {ListNode} head\n * @return {ListNode}\n */\nfunction reverseList(head) {\n  // Your code here\n}",
+    "description": "Given the head of a singly linked list, reverse the list, and return the reversed list.",
+    "authorizedExamples": [
+      {
+        "input": "head = [1,2,3,4,5]",
+        "output": "[5,4,3,2,1]",
+        "explanation": "Reversing [1,2,3,4,5] yields [5,4,3,2,1]."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "reverse-ll-1",
+        "input": [[1, 2, 3, 4, 5]],
+        "expected": [5, 4, 3, 2, 1],
+        "rawInputStr": "[1,2,3,4,5]"
+      }
+    ],
+    "expectedSolvingTimeSeconds": 900,
+    "isActive": true
+  },
+  {
+    "canonicalId": "climbing-stairs",
+    "slug": "climbing-stairs",
+    "title": "Climbing Stairs",
+    "officialDifficulty": "Easy",
+    "topicTags": ["Dynamic Programming"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/climbing-stairs/",
+    "starterCode": "/**\n * @param {number} n\n * @return {number}\n */\nfunction climbStairs(n) {\n  // Your code here\n}",
+    "description": "You are climbing a staircase. It takes n steps to reach the top.\n\nEach time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+    "authorizedExamples": [
+      {
+        "input": "n = 2",
+        "output": "2",
+        "explanation": "There are two ways to climb to the top:\n1. 1 step + 1 step\n2. 2 steps"
+      },
+      {
+        "input": "n = 3",
+        "output": "3",
+        "explanation": "There are three ways to climb to the top:\n1. 1 step + 1 step + 1 step\n2. 1 step + 2 steps\n3. 2 steps + 1 step"
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "climb-stairs-1",
+        "input": [2],
+        "expected": 2,
+        "rawInputStr": "2"
+      },
+      {
+        "id": "climb-stairs-2",
+        "input": [3],
+        "expected": 3,
+        "rawInputStr": "3"
+      }
+    ],
+    "expectedSolvingTimeSeconds": 600,
+    "isActive": true
+  },
+  {
+    "canonicalId": "coin-change",
+    "slug": "coin-change",
+    "title": "Coin Change",
+    "officialDifficulty": "Medium",
+    "topicTags": ["Dynamic Programming"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/coin-change/",
+    "starterCode": "/**\n * @param {number[]} coins\n * @param {number} amount\n * @return {number}\n */\nfunction coinChange(coins, amount) {\n  // Your code here\n}",
+    "description": "You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.\n\nReturn the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.",
+    "authorizedExamples": [
+      {
+        "input": "coins = [1,2,5], amount = 11",
+        "output": "3",
+        "explanation": "11 = 5 + 5 + 1"
+      },
+      {
+        "input": "coins = [2], amount = 3",
+        "output": "-1",
+        "explanation": "Cannot make 3 using only 2s."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "coin-change-1",
+        "input": [[1, 2, 5], 11],
+        "expected": 3,
+        "rawInputStr": "[1,2,5], 11"
+      },
+      {
+        "id": "coin-change-2",
+        "input": [[2], 3],
+        "expected": -1,
+        "rawInputStr": "[2], 3"
+      }
+    ],
+    "expectedSolvingTimeSeconds": 1800,
+    "isActive": true
+  },
+  {
+    "canonicalId": "trapping-rain-water",
+    "slug": "trapping-rain-water",
+    "title": "Trapping Rain Water",
+    "officialDifficulty": "Hard",
+    "topicTags": ["Two Pointers"],
+    "blind75": true,
+    "neetcode150": true,
+    "officialUrl": "https://leetcode.com/problems/trapping-rain-water/",
+    "starterCode": "/**\n * @param {number[]} height\n * @return {number}\n */\nfunction trap(height) {\n  // Your code here\n}",
+    "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
+    "authorizedExamples": [
+      {
+        "input": "height = [0,1,0,2,1,0,1,3,2,1,2,1]",
+        "output": "6",
+        "explanation": "The elevation map traps 6 units of rain water."
+      }
+    ],
+    "sampleTestCases": [
+      {
+        "id": "trap-water-1",
+        "input": [[0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]],
+        "expected": 6,
+        "rawInputStr": "[0,1,0,2,1,0,1,3,2,1,2,1]"
+      }
+    ],
+    "expectedSolvingTimeSeconds": 2400,
+    "isActive": true
+  }
+]
